@@ -1,0 +1,66 @@
+# Requirements - Language Layer Infrastructure QLoRA
+
+## Core Dependencies
+pydantic>=2.5.0
+python-dotenv>=1.0.0
+
+## Machine Learning
+transformers>=4.36.0
+peft>=0.7.0  # QLoRA support
+datasets>=2.16.0
+torch>=2.1.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0  # 4-bit quantization
+
+## NLP & Embeddings
+sentence-transformers>=2.3.0  # E5-large embeddings
+nltk>=3.8.0
+
+## Vector Database
+chromadb>=0.4.22
+
+## Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+pyarrow>=14.0.0  # Parquet support
+
+## Testing & Validation
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+## LLM Integrations (choisir selon besoin)
+# Option 1: OpenAI (GPT-4)
+# openai>=1.6.0
+
+# Option 2: Anthropic (Claude)
+# anthropic>=0.8.0
+
+# Option 3: Google (Gemini)
+# google-generativeai>=0.3.0
+
+# Option 4: Local LLM
+# llama-cpp-python>=0.2.0
+
+## Utilities
+tqdm>=4.66.0
+colorama>=0.4.6
+loguru>=0.7.0  # Better logging
+
+## Optional - Development
+jupyter>=1.0.0
+ipykernel>=6.27.0
+black>=23.12.0  # Code formatting
+ruff>=0.1.9  # Linting
+
+## Optional - Monitoring
+prometheus-client>=0.19.0
+wandb>=0.16.0  # Experiment tracking
+
+## Notes
+# For GPU support, install PyTorch with CUDA:
+# pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+# For Apple Silicon:
+# pip install torch torchvision torchaudio
+
+# Minimum Python version: 3.10+
